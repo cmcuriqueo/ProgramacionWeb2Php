@@ -9,7 +9,7 @@
 		<style type="text/css">
 	        label.error {color: red;	        }
 	    </style>
-        <script type="text/javascript">
+        <!--<script type="text/javascript">
 	
 
         	$().ready(function(){
@@ -49,5 +49,6 @@
            		});
         	});
         </script>
+        -->
     </head>
     <body> 

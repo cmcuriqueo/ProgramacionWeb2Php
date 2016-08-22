@@ -1,5 +1,5 @@
 <?php require __DIR__.'/header.php'; ?>
-	<form class="form-horizontal" method="POST" action="<?php $procesada=true;?>listado.php" id="formulario_index">
+	<form class="form-horizontal" method="POST" action="validacion.php" id="formulario_index">
 	    <div class="container">
 	        <div class="row-flow">
 	            <p></p>
@@ -38,7 +38,16 @@
 		                                <button class="btn btn-default" type="submit">Enviar</button>
 		                            </div>
 								</div>
-
+								<div class="form-group">
+									<?php if(isset($errores)): ?>
+										<p>Error al prosesar el formulario</p>
+										<ul>
+											<?php foreach ($errores as $valor): ?>
+												<li style="color: red;"><?php echo $valor; ?></li>
+											<?php endforeach; ?>
+										</ul>
+									<?php endif;?>
+								</div>
 							</ul>
 						</div>
 					</div>
