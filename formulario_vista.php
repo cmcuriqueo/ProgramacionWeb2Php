@@ -10,15 +10,18 @@ and open the template in the editor.
 -->
 <?php require __DIR__ . '/header.php'; ?>
 <div class="container">
-    <div class="row-flow">
-        <div class="span6">
-
-            <p>Nombre ingresado <?php echo $nombre; ?></p>
-            <p>Edad ingresada <?php echo $edad; ?></p>
-            <p>Localidad ingresada <?php echo $localidad_select; ?></p>
-            
-        </div>
-    </div>
+	<p class="text-center">
+	    <div class="row">
+	        <div class="col-xs-6 col-md-4">
+	            <p>Nombre : <?php echo $nombre; ?></p>
+	            <p>Edad : <?php echo $edad; ?></p>
+	            <p>Localidad : <?php echo $localidad_select; ?></p>
+	        </div>
+	    </div>
+	    <div class="row">
+	    	<a class="btn btn-default" href="index.php">Formulario</a>
+	    </div>
+	</p>
 </div>
 <?php
 require __DIR__ . '/footer.php';
