@@ -44,7 +44,7 @@
                                     <ul>
                                         <?php foreach ($errores as $valor): ?>
                                             <li style="color: red;"><?php echo $valor; ?></li>
-                                            <?php endforeach; ?>
+                                        <?php endforeach; ?>
                                     </ul>
                                 <?php endif; ?>
                             </div>
@@ -75,6 +75,16 @@
                                 <div class="col-sm-offset-2 col-sm-10">
                                     <button class="btn btn-default" type="submit">Enviar</button>
                                 </div>
+                            </div>
+                            <div class="form-group">
+                                <?php if (isset($errores_db)): ?>
+                                    <p>Error al prosesar</p>
+                                    <ul>
+                                        <?php foreach ($errores_db as $valor): ?>
+                                            <li style="color: red;"><?php echo $valor; ?></li>
+                                            <?php endforeach; ?>
+                                    </ul>
+                                <?php endif; ?>
                             </div>
                         </ul>
                     </div>
